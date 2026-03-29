@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Money Manager App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Money Manager</h1>
+</header>
+
+<section class="summary">
+  <div>Income: ₹<span id="totalIncome">0</span></div>
+  <div>Expenses: ₹<span id="totalExpense">0</span></div>
+  <div>Balance: ₹<span id="netBalance">0</span></div>
+</section>
+
+<section class="controls">
+  <button id="openFormBtn">+ Add Transaction</button>
+
+  <select id="filterCategory">
+    <option value="">All</option>
+    <option value="Income">Income</option>
+    <option value="Expense">Expense</option>
+  </select>
+
+  <select id="sortBy">
+    <option value="">Sort</option>
+    <option value="dateDesc">Date ↓</option>
+    <option value="dateAsc">Date ↑</option>
+    <option value="amountDesc">Amount ↓</option>
+    <option value="amountAsc">Amount ↑</option>
+  </select>
+</section>
+
+<!-- ✅ VERTICAL CARD CONTAINER -->
+<section>
+  <h2>Transaction History</h2>
+  <div id="transactionList" class="transaction-container"></div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="transactionModal">
+  <form id="transactionForm">
+    <h3 id="formTitle">Add Transaction</h3>
+
+    <input type="number" id="amount" placeholder="Amount" />
+    <small class="error"></small>
+
+    <input type="date" id="date" />
+    <small class="error"></small>
+
+    <div class="radio-group">
+      <label><input type="radio" name="category" value="Income"> Income</label>
+      <label><input type="radio" name="category" value="Expense"> Expense</label>
+    </div>
+    <small class="error"></small>
+
+    <select id="subCategory">
+      <option value="">Select Sub-Category</option>
+    </select>
+    <small class="error"></small>
+
+    <textarea id="description" placeholder="Description (optional)"></textarea>
+
+    <button type="submit">Save</button>
+    <button type="button" id="closeFormBtn">Cancel</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

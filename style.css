@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.controls {
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.transaction-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.transaction-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.transaction-card div {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.transaction-card span {
+  font-weight: bold;
+}
+
+.transaction-card.income {
+  border-left: 5px solid green;
+}
+
+.transaction-card.expense {
+  border-left: 5px solid red;
+}
+
+.transaction-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal form {
+  background: white;
+  width: 300px;
+  margin: 80px auto;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin-bottom: 6px;
+  padding: 6px;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.invalid {
+  border: 1px solid red;
+}
