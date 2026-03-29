@@ -48,11 +48,11 @@ Responsive layout for desktop and mobile devices
 Modal popup form for adding transactions
 <br>
 📂 Project Structure
-Money-Manager-App/
+Money-Manager-App/<br>
 │
-├── index.html      # Main HTML file
-├── style.css       # Styling and layout
-├── app.js          # JavaScript logic (OOP)
+├── index.html      # Main HTML file<br>
+├── style.css       # Styling and layout<br>
+├── app.js          # JavaScript logic (OOP)<br>
 └── README.md       # Project documentation
 
 
