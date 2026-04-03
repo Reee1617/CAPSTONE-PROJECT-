@@ -39,15 +39,6 @@ button {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.transaction-card div {
-  margin-bottom: 6px;
-  font-size: 14px;
-}
-
-.transaction-card span {
-  font-weight: bold;
-}
-
 .transaction-card.income {
   border-left: 5px solid green;
 }
@@ -62,7 +53,7 @@ button {
   margin-top: 10px;
 }
 
-/* MODAL */
+/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -72,7 +63,7 @@ button {
 
 .modal form {
   background: white;
-  width: 300px;
+  width: 320px;
   margin: 80px auto;
   padding: 20px;
   border-radius: 6px;
@@ -80,8 +71,8 @@ button {
 
 input, select, textarea {
   width: 100%;
-  margin-bottom: 6px;
   padding: 6px;
+  margin-bottom: 6px;
 }
 
 .radio-group {
